@@ -1,4 +1,5 @@
 import 'package:calendar_tp/project_widgets/pj_button.dart';
+import 'package:calendar_tp/screens/add_group_screen/add_group_screen_provider.dart';
 import 'package:calendar_tp/screens/main_screen/main_screen_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:calendar_tp/project_widgets/pj_widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import '../../main.dart';
 import 'cubit/cb_registration_screen.dart';
 import 'cubit/st_registration_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -145,7 +147,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         _validLogin = true;
                         _validPass = true;
                       });
-                      Get.to(MainScreenProvider());
+                      Get.to(NavigationScreen());
                     } else if (_controller.text != LOGIN) {
                       setState(() {
                         _validLogin = false;
