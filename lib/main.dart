@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812), //Default size of Iphone XR and 11
-      builder: () => const GetCupertinoApp(
+      builder: (context) => const GetCupertinoApp(
         localizationsDelegates: [
           DefaultMaterialLocalizations.delegate,
           DefaultWidgetsLocalizations.delegate,
@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
         ],
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: RegistrationScreenProvider(),
+        home: NavigationScreen(),
       ),
     );
   }
