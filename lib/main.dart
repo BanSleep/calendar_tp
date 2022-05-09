@@ -70,7 +70,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           () {
             switch (menuController.currentIndex.value) {
               case 0:
-                return Container();
+                return MainScreenProvider();
               case 1:
                 return AddGroupScreenProvider();
               case 2:
