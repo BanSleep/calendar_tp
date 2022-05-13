@@ -13,4 +13,9 @@ class PjColors {
   static const Color wrongPass = Color.fromRGBO(255, 188, 188, 1.0);
   static const Color blue = Color.fromRGBO(71, 166, 246, 1.0);
   static const Color red = Color.fromRGBO(249, 62, 62, 1.0);
+  static const Color contGrey = Color.fromRGBO(242, 242, 242, 1.0);
+  static const Color selectedItem = Color.fromRGBO(70, 185, 192, 1.0);
+  static const Color navBarGrey = Color.fromRGBO(101, 101, 101, 1.0);
+  static const Color editGrey = Color.fromRGBO(196, 196, 196, 1.0);
+  static const Color grey227 = Color.fromRGBO(227, 227, 227, 1.0);
 }
