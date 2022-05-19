@@ -142,6 +142,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   SizedBox(height: 15.w,),
                   PjButton(onTap: () {
+                    BlocProvider.of<CbRegistrationScreen>(context).register();
                     if(_controller.text == LOGIN && _passController.text == PASS) {
                       setState(() {
                         _validLogin = true;

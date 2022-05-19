@@ -20,8 +20,9 @@ void main() async {
   GetStorage().write(PjConst.THEME, false);
   Api.init(
       baseUrl:
-          'https://your_api.com/api/v1/'); //Input your URL. Learn more eticon_api on pub.dev
+          'http://127.0.0.1:8000'); //Input your URL. Learn more eticon_api on pub.dev
   runApp(MyApp());
+
 }
 
 class MyApp extends StatefulWidget {
@@ -37,6 +38,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
+
     return ScreenUtilInit(
       designSize: const Size(375, 812), //Default size of Iphone XR and 11
       builder: (context) => const GetCupertinoApp(
@@ -47,7 +49,7 @@ class _MyAppState extends State<MyApp> {
         ],
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: NavigationScreen(),
+        home: RegistrationScreenProvider(),
       ),
     );
   }
